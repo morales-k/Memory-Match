@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150.256" viewBox="0 0 150 150.256">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_29" data-name="Ellipse 29" cx="75" cy="75" r="75" transform="translate(0 -0.008)" fill="none" stroke="#f57676" stroke-width="4"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_17" data-name="Rectangle 17" width="114.25" height="39.249" rx="3" transform="translate(0 0)" fill="#f57676"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_19" data-name="Rectangle 19" width="114.25" height="36.871" rx="3" transform="translate(0 0)" fill="#f57676"/>
+    </clipPath>
+  </defs>
+  <g id="Stamp" transform="translate(-1208 -519.665)">
+    <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(1208 519.836)" clip-path="url(#clip-path)">
+      <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(-4.981 74.377) rotate(-17)" fill="none" stroke="#f57676" stroke-width="4">
+        <rect width="153.693" height="48.113" stroke="none"/>
+        <rect x="2" y="2" width="149.693" height="44.113" fill="none"/>
+      </g>
+      <g id="Ellipse_28" data-name="Ellipse 28" transform="translate(0 -0.008)" fill="none" stroke="#f57676" stroke-width="4">
+        <circle cx="75" cy="75" r="75" stroke="none"/>
+        <circle cx="75" cy="75" r="73" fill="none"/>
+      </g>
+      <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(-4.981 74.377) rotate(-17)" fill="none" stroke="#f57676" stroke-width="4">
+        <rect width="153.693" height="48.113" stroke="none"/>
+        <rect x="2" y="2" width="149.693" height="44.113" fill="none"/>
+      </g>
+    </g>
+    <g id="Mask_Group_13" data-name="Mask Group 13" transform="translate(1211.223 553.069) rotate(-17)" clip-path="url(#clip-path-2)">
+      <g id="Ellipse_33" data-name="Ellipse 33" transform="translate(-0.03 0.182)" fill="none" stroke="#f57575" stroke-width="2">
+        <ellipse cx="57.125" cy="53.522" rx="57.125" ry="53.522" stroke="none"/>
+        <ellipse cx="57.125" cy="53.522" rx="56.125" ry="52.522" fill="none"/>
+      </g>
+    </g>
+    <g id="Mask_Group_15" data-name="Mask Group 15" transform="translate(1354.819 636.518) rotate(163)" clip-path="url(#clip-path-3)">
+      <g id="Ellipse_35" data-name="Ellipse 35" transform="translate(-0.03 0.171)" fill="none" stroke="#f57575" stroke-width="2">
+        <ellipse cx="57.125" cy="50.279" rx="57.125" ry="50.279" stroke="none"/>
+        <ellipse cx="57.125" cy="50.279" rx="56.125" ry="49.279" fill="none"/>
+      </g>
+    </g>
+    <text id="FRESH" transform="translate(1230.437 616.86) rotate(-17)" fill="#f57676" stroke="#707070" stroke-width="1" font-size="25" font-family="HarlowSolid, Harlow Solid"><tspan x="0" y="0">FRESH</tspan></text>
+  </g>
+</svg>

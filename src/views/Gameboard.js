@@ -1,0 +1,88 @@
+import { useState, useEffect } from "react";
+import CardContainer from "./CardContainer";
+import OneBite from "../assets/OneBite.png";
+import TwoBite from "../assets/TwoBite.png";
+import ThreeBite from "../assets/ThreeBite.png";
+
+function Gameboard() {
+  const [score, setScore] = useState(0);
+  const [cardsFlipped, setCardsFlipped] = useState(0);
+  const [numberOfMatches, setNumberOfMatches] = useState(24);
+  const [pointsForMatch, setPointsForMatch] = useState(10);
+  const [resetGame, setResetGame] = useState(false);
+  const [winner, setWinner] = useState(false);
+  const [currentBite, setCurrentBite] = useState(OneBite);
+
+  useEffect(() => {
+    handleWin();
+  }, [score]);
+
+  useEffect(() => {
+    if (resetGame) {
+      setResetGame(false);
+    }
+  }, [resetGame]);
+
+  // Finish winning animation with useEffect to avoid infinite loops.
+  useEffect(() => {
+    if (currentBite === TwoBite) {
+      setTimeout(() => {
+        setCurrentBite(ThreeBite);
+      }, 300);
+    }
+  }, [currentBite]);
+
+  function handleScore() {
+    setScore(score + pointsForMatch);
+  }
+
+  function handleFlipCount() {
+    setCardsFlipped(cardsFlipped + 1);
+  }
+
+  function handleWin() {
+    if (numberOfMatches * pointsForMatch === score) {
+      setWinner(true);
+    }
+  }
+
+  function handleReset() {
+    setResetGame(true);
+    setWinner(false);
+    setScore(0);
+    setCardsFlipped(0);
+    setCurrentBite(OneBite);
+    window.scroll(0, 0);
+  }
+
+  // Cycles through SVGs to play the winning animation.
+  function winAnimation() {
+    setTimeout(() => {
+      if (currentBite === OneBite) {
+        setTimeout(() => {
+          setCurrentBite(TwoBite);
+        }, 300);
+      }
+    }, 300);
+  }
+
+  return (
+    <div id="gameboard">
+      <h1>Memory Match</h1>
+      <div className="game-info">
+        <h2>Score: {score}</h2>
+        <h2>Cards Flipped: {cardsFlipped}</h2>
+        <button className="reset-btn" onClick={() => handleReset()}>RESET</button>
+      </div>
+      <div className={winner ? 'winner' : 'hidden'}>
+        <p>You Win!</p>
+        {winner ? winAnimation() : null}
+        <img className="win-donut" src={currentBite} alt="Biten donut." />
+        <button className="play-again-btn" onClick={() => handleReset()}>Play Again</button>
+      </div>
+      <CardContainer handleScore={handleScore} handleFlipCount={handleFlipCount} numberOfMatches={numberOfMatches} resetGame={resetGame} />
+    </div>
+  );
+}
+
+export default Gameboard;
