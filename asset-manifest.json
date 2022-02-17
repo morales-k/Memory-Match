@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "https://morales-k.github.io/Memory-Match/static/css/main.dcd8c612.css",
+    "main.js": "https://morales-k.github.io/Memory-Match/static/js/main.8fea03a7.js",
+    "static/media/Lato-Bold.ttf": "https://morales-k.github.io/Memory-Match/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/ThreeBite.png": "https://morales-k.github.io/Memory-Match/static/media/ThreeBite.5d9a5071871dd6d8b975.png",
+    "static/media/OneBite.png": "https://morales-k.github.io/Memory-Match/static/media/OneBite.b8f19c144a60964dd734.png",
+    "static/media/TwoBite.png": "https://morales-k.github.io/Memory-Match/static/media/TwoBite.f5e8aac3bc6af372bd70.png",
+    "static/media/Stamp.svg": "https://morales-k.github.io/Memory-Match/static/media/Stamp.b2181086ed4077979d80.svg",
+    "index.html": "https://morales-k.github.io/Memory-Match/index.html",
+    "main.dcd8c612.css.map": "https://morales-k.github.io/Memory-Match/static/css/main.dcd8c612.css.map",
+    "main.8fea03a7.js.map": "https://morales-k.github.io/Memory-Match/static/js/main.8fea03a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcd8c612.css",
+    "static/js/main.8fea03a7.js"
+  ]
+}
