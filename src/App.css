@@ -211,7 +211,7 @@ body {
 
 .card-logo {
   border: 3px solid #d9a87e;
-  background: url("../src/assets/images/Stamp.svg") center center no-repeat;
+  background: url("../src/assets/images/Stamp.png") center center no-repeat;
   background-size: contain;
   background-color: #ffd0a7;
 }
