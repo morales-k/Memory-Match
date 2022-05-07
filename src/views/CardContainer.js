@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from './Card';
 import * as Donuts from '../assets/Donuts';
 import * as Coffee from '../assets/Coffee';
+import matchSound from '../assets/sounds/match.mp3';
 
 function CardContainer(props) {
   const [cards, setCards] = useState([]);
@@ -31,8 +32,11 @@ function handleCards(currentTarget, clickedCard) {
 
   clickedCard.flipped = true;
 
+  // Handle finding a match.
   if (flipCount === 2) {
     if (clickedCard.matchIndex === prevCard.matchIndex && clickedCard.type === prevCard.type && clickedCard.id !== prevCard.id) {
+      let sound = new Audio(matchSound);
+      sound.play();
       clickedCard.matchFound = true;
       prevCard.matchFound = true;
       currentTarget.classList.add('flip');

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import CardContainer from "./CardContainer";
-import OneBite from "../assets/OneBite.png";
-import TwoBite from "../assets/TwoBite.png";
-import ThreeBite from "../assets/ThreeBite.png";
+import OneBite from "../assets/images/OneBite.png";
+import TwoBite from "../assets/images/TwoBite.png";
+import ThreeBite from "../assets/images/ThreeBite.png";
+import winSound from "../assets/sounds/win.mp3";
 
 function Gameboard() {
   const [score, setScore] = useState(0);
@@ -43,6 +44,8 @@ function Gameboard() {
   function handleWin() {
     if (numberOfMatches * pointsForMatch === score) {
       setWinner(true);
+      let sound = new Audio(winSound);
+      sound.play();
     }
   }
 
@@ -68,8 +71,8 @@ function Gameboard() {
 
   return (
     <div id="gameboard">
-      <h1>Memory Match</h1>
       <div className="game-info">
+        <h1>Memory Match</h1>
         <h2>Score: {score}</h2>
         <h2>Cards Flipped: {cardsFlipped}</h2>
         <button className="reset-btn" onClick={() => handleReset()}>RESET</button>
