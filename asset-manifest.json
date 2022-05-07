@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Memory-Match/static/css/main.d1be7682.css",
+    "main.css": "/Memory-Match/static/css/main.50a4fa55.css",
     "main.js": "/Memory-Match/static/js/main.30eb7cb4.js",
     "static/media/background.jpg": "/Memory-Match/static/media/background.7f6008d2cc1ec9e6705e.jpg",
     "static/media/win.mp3": "/Memory-Match/static/media/win.c200e530c68e3e64a443.mp3",
     "static/media/Lato-Bold.ttf": "/Memory-Match/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
     "static/media/match.mp3": "/Memory-Match/static/media/match.13bc7110cd4b1b41f7f6.mp3",
+    "static/media/Stamp.png": "/Memory-Match/static/media/Stamp.2a80ab3df60c78d09b77.png",
     "static/media/ThreeBite.png": "/Memory-Match/static/media/ThreeBite.5d9a5071871dd6d8b975.png",
     "static/media/OneBite.png": "/Memory-Match/static/media/OneBite.b8f19c144a60964dd734.png",
     "static/media/TwoBite.png": "/Memory-Match/static/media/TwoBite.f5e8aac3bc6af372bd70.png",
     "static/media/flip.mp3": "/Memory-Match/static/media/flip.3d44922eecf1e77c3657.mp3",
-    "static/media/Stamp.svg": "/Memory-Match/static/media/Stamp.b2181086ed4077979d80.svg",
     "index.html": "/Memory-Match/index.html",
-    "main.d1be7682.css.map": "/Memory-Match/static/css/main.d1be7682.css.map",
+    "main.50a4fa55.css.map": "/Memory-Match/static/css/main.50a4fa55.css.map",
     "main.30eb7cb4.js.map": "/Memory-Match/static/js/main.30eb7cb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1be7682.css",
+    "static/css/main.50a4fa55.css",
     "static/js/main.30eb7cb4.js"
   ]
 }
