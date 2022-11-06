@@ -1,0 +1,78 @@
+:root {
+    --reset-bg: #f57676;
+    --reset-accent: #a53d3d;
+    --game-mode-bg: #A8D1EA;
+    --game-mode-accent: #7294A8;
+  }
+
+  .btn {
+    width: 80px;
+    height: 40px;
+    align-self: flex-start;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    transition: box-shadow ease-out 0.1s;
+    font-family: Lato-Bold;
+    cursor: pointer;
+  }
+
+  .reset-btn {
+    background-color: var(--reset-bg);
+    border: 1px solid var(--reset-accent);
+    border-bottom: 2px solid var(--reset-accent);
+    box-shadow: 0 2px 2px var(--reset-accent);
+  }
+  
+  .reset-btn:hover {
+    box-shadow: 0 -1 1px var(--reset-accent);
+  }
+  
+  .reset-btn:active {
+    box-shadow: 0 0 0.5px var(--reset-accent);
+    border-bottom: 1px solid var(--reset-accent);
+  }
+
+  .game-mode-btn {
+    background-color: var(--game-mode-bg);
+    border: 1px solid var(--game-mode-accent);
+    border-bottom: 2px solid var(--game-mode-accent);
+    box-shadow: 0 2px 2px var(--game-mode-accent);
+  }
+  
+  .game-mode-btn:hover {
+    box-shadow: 0 -1 1px var(--game-mode-accent);
+  }
+  
+  .game-mode-btn:active {
+    box-shadow: 0 0 0.5px var(--game-mode-accent);
+    border-bottom: 1px solid var(--game-mode-accent);
+  }
+
+  .play-again-btn {
+    width: 120px;
+    height: 40px;
+    font-family: Lato-Bold;
+    background-color: #a8cbd6;
+    box-shadow: 0 2px 2px #77abd6;
+    border: none;
+    border: 1px solid #77abd6;
+    border-bottom: 2px solid #77abd6;
+    border-radius: 4px;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: box-shadow ease-out 0.1s;
+    margin-bottom: 5%;
+  }
+  
+  .play-again-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 -1 1px #77abd6;
+  }
+  
+  .play-again-btn:active {
+    box-shadow: 0 0 0.5px #77abd6;
+    border-bottom: 1px solid #77abd6;
+  }

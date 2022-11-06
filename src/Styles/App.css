@@ -1,0 +1,213 @@
+body,
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #eadada;
+  background: url('../assets/images/background.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+#gameboard {
+  margin: 3%;
+  font-family: Lato-Bold, sans-serif;
+}
+
+.game-info {
+  width: 100%;
+  max-width: 630px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1%;
+  background-color: #fff;
+  border: 4px ridge #b56f6f;
+  border-radius: 4px;
+}
+
+.game-info h1 {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.game-info h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+  text-align: right;
+}
+
+.game-mode-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.game-mode-row .btn {
+  flex-basis: 33%;
+  margin: 2%;
+}
+
+.hidden {
+  display: none;
+}
+
+.winner {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 100px;
+  left: calc(50vw - 250px / 2);
+  background-color: #fff;
+  z-index: 1;
+  border: 4px ridge #b56f6f;
+  border-radius: 4px;
+}
+
+.winner p {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: goldenrod;
+  margin: 5% 0 0 0;
+}
+
+.win-donut {
+  width: 200px;
+  height: 200px;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border: 4px ridge #b56f6f;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 5% auto;
+}
+
+.card-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5%;
+}
+
+.card {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin: 6%;
+  cursor: pointer;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  position: relative;
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.card,
+.card-front,
+.card-back {
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  min-height: 100%;
+  padding: 4%;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-front {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  background-color: #ffffff;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  border: 3px solid #b56f6f;
+  contain: strict;
+}
+
+.card-logo {
+  border: 3px solid #d9a87e;
+  background: url("../assets/Stamp.png") center center no-repeat;
+  background-size: contain;
+  background-color: #ffd0a7;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (min-width: 711px) {
+  .card-container {
+    width: 630px;
+    margin: 3% auto;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .card-container {
+    width: 780px;
+  }
+}
+
+@media screen and (min-width: 1013px) {
+  .card-container {
+    width: 902px;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .card-container {
+    width: 1100px;
+  }
+}

@@ -1,4 +1,5 @@
-import './App.css';
+import './Styles/App.css'
+import './Styles/Buttons.css'
 import Gameboard from './views/Gameboard';
 
 function App() {
