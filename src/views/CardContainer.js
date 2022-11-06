@@ -26,7 +26,6 @@ function CardContainer(props) {
 
 // Flips cards back after 2 cards are flipped if no match is found.
 function handleCards(currentTarget, clickedCard) {
-  // let updatedFlipCount = flipCount += 1;
   setFlipCount(flipCount += 1);
   props.handleFlipCount();
 

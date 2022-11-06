@@ -4,6 +4,7 @@ import OneBite from "../assets/images/OneBite.png";
 import TwoBite from "../assets/images/TwoBite.png";
 import ThreeBite from "../assets/images/ThreeBite.png";
 import winSound from "../assets/sounds/win.mp3";
+import Button from "./Components/Button";
 
 function Gameboard() {
   const [score, setScore] = useState(0);
@@ -73,9 +74,30 @@ function Gameboard() {
     <div id="gameboard">
       <div className="game-info">
         <h1>Memory Match</h1>
-        <h2>Score: {score}</h2>
-        <h2>Cards Flipped: {cardsFlipped}</h2>
-        <button className="reset-btn" onClick={() => handleReset()}>RESET</button>
+        <div className="col">
+            <Button
+              style="btn reset-btn"
+              perform={handleReset}
+              title="RESET" />
+        </div>
+        <div className="col">
+            <h2>Cards Flipped: {cardsFlipped}</h2>
+            <h2>Score: {score}</h2>
+        </div>
+        <div className="game-mode-row">
+            <Button
+                style="btn game-mode-btn"
+                perform={handleReset}
+                title="Easy" />
+            <Button
+                style="btn game-mode-btn"
+                perform={handleReset}
+                title="Normal" />
+            <Button
+                style="btn game-mode-btn"
+                perform={handleReset}
+                title="Hard" />
+        </div>
       </div>
       <div className={winner ? 'winner' : 'hidden'}>
         <p>You Win!</p>
