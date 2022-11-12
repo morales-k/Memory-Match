@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Memory-Match/static/css/main.f800ed63.css",
+    "main.js": "/Memory-Match/static/js/main.ded86980.js",
+    "static/media/background.jpg": "/Memory-Match/static/media/background.7f6008d2cc1ec9e6705e.jpg",
+    "static/media/win.mp3": "/Memory-Match/static/media/win.c200e530c68e3e64a443.mp3",
+    "static/media/Lato-Bold.ttf": "/Memory-Match/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/match.mp3": "/Memory-Match/static/media/match.13bc7110cd4b1b41f7f6.mp3",
+    "static/media/Stamp.png": "/Memory-Match/static/media/Stamp.2a80ab3df60c78d09b77.png",
+    "static/media/ThreeBite.png": "/Memory-Match/static/media/ThreeBite.5d9a5071871dd6d8b975.png",
+    "static/media/OneBite.png": "/Memory-Match/static/media/OneBite.b8f19c144a60964dd734.png",
+    "static/media/TwoBite.png": "/Memory-Match/static/media/TwoBite.f5e8aac3bc6af372bd70.png",
+    "static/media/flip.mp3": "/Memory-Match/static/media/flip.3d44922eecf1e77c3657.mp3",
+    "index.html": "/Memory-Match/index.html",
+    "main.f800ed63.css.map": "/Memory-Match/static/css/main.f800ed63.css.map",
+    "main.ded86980.js.map": "/Memory-Match/static/js/main.ded86980.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f800ed63.css",
+    "static/js/main.ded86980.js"
+  ]
+}
