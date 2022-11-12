@@ -136,6 +136,11 @@ body {
   -webkit-transition: transform 0.6s;
 }
 
+.card svg {
+  width: 100px;
+  height: 100px;
+}
+
 .card.flip {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
