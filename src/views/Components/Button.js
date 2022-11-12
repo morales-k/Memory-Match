@@ -6,7 +6,7 @@ const Button = (props) => {
   return (
     <button
         className={style}
-        onClick={() => perform}>
+        onClick={perform}>
         {title}
     </button>
   )
