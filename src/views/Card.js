@@ -3,6 +3,7 @@ import * as Coffee from '../assets/Coffee';
 import flipSound from '../assets/sounds/flip.mp3';
 
 function Card(props) {
+  const { card, handleCards } = props;
   const allDonuts = [
     <Donuts.ChocolateDrizzleFilled />,
     <Donuts.ChocolateSprinklesFilled />,
@@ -35,28 +36,28 @@ function Card(props) {
   function handleCardClick(e) {
     let flip = new Audio(flipSound);
 
-    if (!props.card.flipped) {
+    if (!card.flipped) {
       flip.play();
     }
 
-    if (props.card.matchFound === true) {
+    if (card.matchFound === true) {
       e.currentTarget.classList.add('flip'); // Keeps matching icons up.
     } else {
       e.currentTarget.classList.toggle('flip');
-      props.handleCards(e.currentTarget, props.card);
+      handleCards(e.currentTarget, card);
     }
   }
 
   return (
-      <div id={props.card.id} className={props.card.flipped ? 'card flip' : 'card'} onClick={(e) => handleCardClick(e)}>
+      <div id={card.id} className={card.flipped ? 'card flip' : 'card'} onClick={(e) => handleCardClick(e)}>
         <div className="card-front card-logo"></div>
         { 
-          props.card.type === 'Donut' ? 
+          card.type === 'Donut' ? 
           <div className="card-back">
-            {allDonuts[props.card.matchIndex]}
+            {allDonuts[card.matchIndex]}
           </div> : 
           <div className="card-back">
-            {allCoffee[props.card.matchIndex]}
+            {allCoffee[card.matchIndex]}
           </div>
         }
       </div>
