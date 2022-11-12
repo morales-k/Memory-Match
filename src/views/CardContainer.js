@@ -42,15 +42,16 @@ function handleCards(currentTarget, clickedCard) {
 
   // Handle finding a match.
   if (flipCount === 2) {
-    if (clickedCard.matchIndex === prevCard.matchIndex && clickedCard.type === prevCard.type && clickedCard.id !== prevCard.id) {
-      let sound = new Audio(matchSound);
-      sound.play();
+    let matchFound = determineIfMatch(clickedCard);
+
+    if (matchFound) {
+      playMatchSound();
       clickedCard.matchFound = true;
       prevCard.matchFound = true;
       currentTarget.classList.add('flip');
       setFlipCount(0); 
       handleScore();
-    } else if (clickedCard.matchIndex !== prevCard.matchIndex || clickedCard.type !== prevCard.type || clickedCard.id === prevCard.id) {
+    } else if (!matchFound) {
         // Flip previous card back if not part of a found match.
         setTimeout(() => {
           if (!prevCard.matchFound) {
@@ -68,6 +69,30 @@ function handleCards(currentTarget, clickedCard) {
   setCurrentCard(clickedCard);
   setPrevCard(clickedCard);
   setPrevTarget(currentTarget);
+}
+
+// Plays sound when match is found.
+function playMatchSound() {
+  let sound = new Audio(matchSound);
+  sound.play();
+}
+
+/**
+ * Takes the last clicked card & determines if it matches the previously clicked card.
+ * 
+ * @param {Object} clickedCard - The last card clicked.
+ * @returns 
+ */
+function determineIfMatch(clickedCard) {
+  if (clickedCard.matchIndex === prevCard.matchIndex && 
+    clickedCard.type === prevCard.type && 
+    clickedCard.id !== prevCard.id) {
+      return true
+    } else if (clickedCard.matchIndex !== prevCard.matchIndex || 
+      clickedCard.type !== prevCard.type || 
+      clickedCard.id === prevCard.id) {
+        return false
+    }
 }
 
 /**
