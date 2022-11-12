@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Memory-Match/static/css/main.f800ed63.css",
+    "main.css": "/Memory-Match/static/css/main.c9ddfa2b.css",
     "main.js": "/Memory-Match/static/js/main.ded86980.js",
     "static/media/background.jpg": "/Memory-Match/static/media/background.7f6008d2cc1ec9e6705e.jpg",
     "static/media/win.mp3": "/Memory-Match/static/media/win.c200e530c68e3e64a443.mp3",
@@ -12,11 +12,11 @@
     "static/media/TwoBite.png": "/Memory-Match/static/media/TwoBite.f5e8aac3bc6af372bd70.png",
     "static/media/flip.mp3": "/Memory-Match/static/media/flip.3d44922eecf1e77c3657.mp3",
     "index.html": "/Memory-Match/index.html",
-    "main.f800ed63.css.map": "/Memory-Match/static/css/main.f800ed63.css.map",
+    "main.c9ddfa2b.css.map": "/Memory-Match/static/css/main.c9ddfa2b.css.map",
     "main.ded86980.js.map": "/Memory-Match/static/js/main.ded86980.js.map"
   },
   "entrypoints": [
-    "static/css/main.f800ed63.css",
+    "static/css/main.c9ddfa2b.css",
     "static/js/main.ded86980.js"
   ]
 }
